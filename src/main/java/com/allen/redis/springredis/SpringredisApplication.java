@@ -9,12 +9,9 @@ import org.springframework.context.annotation.ComponentScans;
 
 @SpringBootApplication
 public class SpringredisApplication {
-
     public static void main(String[] args) {
         ConfigurableApplicationContext ctx = SpringApplication.run(SpringredisApplication.class, args);
         TestRedis bean = ctx.getBean(TestRedis.class);
         bean.testRedis();
-
     }
-
 }
